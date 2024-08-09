@@ -1,0 +1,113 @@
+.cabecalho__menu-burger{
+    width: 24px;
+    height: 24px;
+    background-image: url("../assets/menu.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    margin: 16px;
+}
+
+.cabecalho{
+    background-color: var(--cor-extra);
+    border-radius: 0 0 50px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.logo{
+    width: 45px;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+}
+
+.container__img{
+    padding: 1em;
+}
+
+.lista-menu{
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 60vw;
+}
+
+.container__botao:checked~.lista-menu{
+    display: block;
+}
+
+.lista-menu__titulo, .lista-menu__item{
+    padding: 1em;
+    background-color: var(--cor-extra);
+}
+
+.lista-menu__titulo{
+    color: var(--cor-terciaria);
+    font-weight: bold;
+    font-family: var(--fonte-principal);
+    
+}
+
+.lista-menu__link{
+   background: var(--cor-primaria);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-family: var(--fonte-secundaria);
+}
+
+.container__titulo{
+    display: none;
+}
+
+.opcoes{
+    display: none;
+}
+
+@media screen and (min-width: 1440px) {
+    .container__titulo{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 24px;
+    }
+    .container__titulo-um{
+        font-family: var(--fonte-secundaria);
+        font-size: 1.5rem;
+        color: var(--cor-terciaria);
+    }
+
+    .container__titulo-dois{
+        font-family: var(--fonte-principal);
+        margin-left: 0;
+        font-size: 2.5rem;
+    }
+
+    .opcoes{
+        display: flex;
+        font-family: var(--fonte-secundaria);
+        font-size: 2rem;
+    }
+
+    .opcoes__item{
+        padding: 0 1em;
+    }
+
+    .opcoes__link{
+        text-decoration: none;
+        color: var(--cor-primaria);
+    }
+
+    .cabecalho__menu-burger{
+        display: none;
+    }
+
+    .logo{
+        display: none;
+    }
+}

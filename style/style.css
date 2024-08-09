@@ -1,0 +1,24 @@
+@import url("header.css");
+@import url("banner.css");
+@import url("carrossel.css");
+@import url("generos.css");
+@import url("rodape.css");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap');
+
+:root{
+    --cor-primaria: #2C3639;
+    --cor-secundaria: #3F4E4F;
+    --cor-terciaria: #A27B5C;
+    --cor-extra: #DCD7C9;
+    --fonte-principal: "Pacifico";
+    --fonte-secundaria: "Montserrat";
+}
+
+body{
+    background-color: var(--cor-primaria);
+    font-family: var(--fonte-secundaria);
+}
+
+.container__botao{
+    display: none;
+}

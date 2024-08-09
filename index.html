@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leitura Ópolis</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="container">
+            <input type="checkbox" id="menu" class="container__botao">
+                <label for="menu">
+                    <span class="cabecalho__menu-burger container__img"></span>
+                </label>
+            <ul class="lista-menu">
+                <li class="lista-menu__titulo">Meu perfil</li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">estante</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">nova leitura</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">histórico</a>
+                </li>
+            </ul>
+            <img class="logo container__img" src="assets/logo.svg" alt="logo da leitura ópolis">
+            <h1 class="container__titulo container__titulo-um">Leitura</h1><h1 class="container__titulo container__titulo-dois">Ópolis</h1>
+        </div>
+        <ul class="opcoes">
+            <li class="opcoes__item"><a href="#" class="opcoes__link">estante</a></li>
+            <li class="opcoes__item"><a href="#" class="opcoes__link">nova leitura</a></li>
+            <li class="opcoes__item"><a href="#" class="opcoes__link">histórico</a></li>
+        </ul>
+        <div class="container container__img">
+            <a href="#"><img src="assets/profile.svg" alt="meu perfil" class="container__img"></a>
+        </div>
+    </header>
+    <section class="banner">
+        <h2 class="banner__titulo">Organize sua próxima leitura!</h2>
+        <p class="banner__texto">Encontre agora o próximo livro que você lerá da sua estante.</p>
+        <input type="search" class="banner__pesquisa" placeholder="qual será sua próxima leitura?">
+    </section>
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">novos lançamentos</h2>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="/assets/ailha.svg" alt="Livro A Ilha"></div>
+              <div class="swiper-slide"><img src="/assets/aveg.svg" alt="Livro A Vegeratiana"></div>
+              <div class="swiper-slide"><img src="/assets/prgluc.svg" alt="Livro O Perigo de Estar Lúcida"></div>
+              <div class="swiper-slide"><img src="/assets/intrnum.svg" alt="Livro Introdução à Numerologia"></div>
+              <div class="swiper-slide"><img src="/assets/tramor.svg" alt="Livro Trilogia do Amor"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        <div class="card">
+            <div class="card__descricao">
+                <div class="descricao__titulo">
+                    <h3>seu autor favorito foi:</h3>
+                    <h2 class="descricao__titulo-livro">Marcos Lacerda</h2>
+                    <p class="descricao__texto">MARCOS LACERDA é psicólogo e influenciador digital. Nascido em João Pessoa, Paraíba, é mestre em Psicologia Social. Atende em sua clínica particular desde 1993.</p>
+                </div>
+                <img src="/assets/marcos.svg" class="card__img" alt="Foto do autor Marcos Lacerda">
+            </div>
+        </div>
+    </section>
+    <section class="generos">
+        <h2 class="generos__titulo">generos de livros visitados recentemente</h2>
+        <ul class="generos__lista">
+            <li class="generos__item">
+                <a href="#" class="generos__link">ficção cientifica</a>
+            </li>
+            <li class="generos__item">
+                <a href="#" class="generos__link">auto-ajuda</a>
+            </li>
+            <li class="generos__item">
+                <a href="#" class="generos__link">terror</a>
+            </li>
+            <li class="generos__item">
+                <a href="#" class="generos__link">suspense</a>
+            </li>
+            <li class="generos__item">
+                <a href="#" class="generos__link">drama</a>
+            </li>
+            <li class="generos__item">
+                <a href="#" class="generos__link">romance</a>
+            </li>
+        </ul>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js">
+    </script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+            },
+        });        
+    </script>
+
+<hr noshade=”noshade”/>
+
+<footer class="rodape">
+    <div class="rodape__item">
+        <img src="/assets/logo.svg" alt="logo da leitua opolis" class="rodape__img">
+    </div>
+    <div class="rodape__item">
+        <h2 class="rodape__titulo">2024. Desenvolvido por Adriana Garcia.</h2>
+    </div>
+    <div class="rodape__item">
+        <a href="#" class="lista-rodape__link">sobre nós</a>
+        <a href="#" class="lista-rodape__link">baixe nosso app</a>
+    </div>
+    <div class="rodape__item">
+        <a class="lista-rodape__link" href="#">
+        <img src="/assets/ig.svg" alt="logo ig" class="rodape__img-rs">
+        <a class="lista-rodape__link" href="#" >
+        <img src="/assets/x.svg" alt="logo x" class="rodape__img-rs">
+        <a class="lista-rodape__link" href="#">
+        <img src="/assets/fb.svg" alt="logo fb" class="rodape__img-rs">
+    </div>
+</footer>
+</body>
+</html>
