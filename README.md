@@ -11,3 +11,6 @@ O Leitura Ópolis é uma estante pessoal e virtual para pessoas que desejam orga
 Idealizado, prototipado e desenvolvido por Adriana Garcia.
 
 *Esse projeto será aprimorado conforme meus conhecimentos de Front-end forem sendo adquiridos, ele não tem uma data final.*
+
+O link do projeto no Figma pode ser acessado aqui:
+https://www.figma.com/design/2C2xjeNJ9bqXrCMmnMTkBL/Portfolio-Leitura-%C3%93polis?node-id=1-3&t=m06eRs7dguPph2yr-1
